@@ -1,0 +1,376 @@
+Assignment 2
+
+
+import requests
+#from requests_oauthlib import OAuth1
+#from __future__ import unicode_literals
+from requests_oauthlib import OAuth1
+#from urlparse import parse_qs
+
+url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
+#url1 = 'https://api.twitter.com/oauth/access_token'
+auth = OAuth1('EKwc7yj7uqm2k71N5hGFQqrxd', 'gYQC8HgieVSE50v0uelFUdTa8nqXZDR3DqhYc7F0lK1OY6biFA',
+                  '196464957-UhsygQ19Pfw3dPiAwkBxtlHLVPdRafMHECIjcsVT', '5aO82FMTF58G2hnB49rd7hmMiX5MqqQ7HlIWWbzjY0adY')
+
+requests.get(url, auth=auth)
+
+r = requests.get("https://api.twitter.com/1.1/search/tweets.json?vertical=news&q=manchester%20united&src=typd",auth=auth)
+
+_json_file_ = open('./tweet_jsons.txt', 'w')
+_json_file_.write(r.text)
+
+
+
+
+
+
+
+/////////////////////////////////////////////////
+
+
+
+
+#!/usr/bin python
+
+#TODO: 
+#1. Add location path in the option
+
+import os
+import urllib
+#import urlparse
+import requests
+import argparse
+import time
+from datetime import datetime,date,timedelta
+from requests_oauthlib import OAuth1
+
+def Parse_CommandLine(parser):
+
+	parser.add_argument("Search_term", help="Search word to be queried" + \
+		"to twitter API")
+	args = parser.parse_args()
+	print("The query to be searched is "+ args.Search_term)
+	return args
+
+def Authenticate_User(auth):
+	#Authenticate the User
+	url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
+	#url1 = 'https://api.twitter.com/oauth/access_token'
+	
+	res = requests.get(url, auth=auth)
+	return res
+	#print(res)
+
+def Create_encode_query(Base_URL,Search_term):
+	#print(Search_term)
+	
+	search_url = Base_URL + "?result_type=mixed" + "&count=100" + \
+			"&since_id=788831139414831106"
+
+	search_url = search_url + "&q="
+
+	res = urllib.quote(Search_term)
+	#print(res)
+	search_url = search_url + res
+	#print(search_url)
+	return search_url
+
+def Create_Request_URL(Search_term,auth):
+	#Create a Search Request
+
+	Base_URL = "https://api.twitter.com/1.1/search/tweets.json"
+
+	#Create a encoded Query
+	search_url = Create_encode_query(Base_URL,Search_term)
+
+	return search_url
+	#r = requests.get("https://api.twitter.com/1.1/search/tweets.json?"+  		#"vertical=news&q=manchester%20united&src=typd",auth=auth)
+
+def get_tweets(search_url,auth):
+	r = requests.get(search_url,auth=auth)
+
+	print(r.text)
+	#get the last since id
+	a = r.json()
+	print("\n\n\n\n")
+	print(a["search_metadata"])
+
+	meta = a["search_metadata"]
+
+	since_id = meta["max_id_str"]
+
+	return r, since_id
+
+def save_tweets(search_term,tweets_json,since_id):
+	
+	d0 = datetime.now()
+	#print('d0 :',d0)
+	cur_time = str(d0.time())
+	Cur_date = str(d0.date())
+	#print('Cur_date :',Cur_date)
+	#print('cur_time :',cur_time)
+
+	#print(str(datetime.now()))
+
+	#1. Create Folder with Current Date
+	#2. Create Folder with Search Term
+	#3. Create file of json response in that folder with time_stamp name
+
+	newpath = "./Output"
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Output Directory")
+	
+	newpath = newpath +"/" + Cur_date
+
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Date Directory")
+
+	newpath = newpath +"/" + search_term
+
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Search Directory")
+	#save Since_id in search_term folder
+	sid = newpath + "/" + "since_id.txt"
+	fd = open(sid,"w")
+	fd.write(str(since_id))
+	
+	newpath = newpath +"/" + cur_time + ".json"
+
+	_json_file_ = open(newpath, 'w')
+	_json_file_.write(tweets_json.text)
+
+
+def Main():
+	#Parse the Twitter search term
+	parser = argparse.ArgumentParser()
+	parse_result = Parse_CommandLine(parser)
+	#print(parse_result)
+	
+	auth = OAuth1('EKwc7yj7uqm2k71N5hGFQqrxd', 		'gYQC8HgieVSE50v0uelFUdTa8nqXZDR3DqhYc7F0lK1OY6biFA',
+                  '196464957-UhsygQ19Pfw3dPiAwkBxtlHLVPdRafMHECIjcsVT', 	'5aO82FMTF58G2hnB49rd7hmMiX5MqqQ7HlIWWbzjY0adY')
+
+	res = Authenticate_User(auth)
+	#print(type(res))
+
+	#Check if the Authentication was successfull
+	if res.status_code == 200:
+		#print("Authenticate Successfull")
+
+		url = Create_Request_URL(parse_result.Search_term,auth)
+
+		print("URL is "+url)
+		tweets, since_id = get_tweets(url,auth)
+
+		#Break at max limit reached
+		save_tweets(parse_result.Search_term,tweets,since_id) #,parse_result.location
+
+		#_json_file_ = open('./tweet_jsons.txt', 'w')
+		#_json_file_.write(r.text)
+
+if __name__ == "__main__":
+	Main()
+
+
+
+
+
+///////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////
+
+
+#!/usr/bin python
+
+#TODO: 
+#1. Add location path in the option
+
+import os
+import urllib
+#import urlparse
+import requests
+import argparse
+import time
+from datetime import datetime,date,timedelta
+from requests_oauthlib import OAuth1
+
+def Parse_CommandLine(parser):
+
+	parser.add_argument("Search_term", help="Search word to be queried" + \
+		"to twitter API")
+	args = parser.parse_args()
+	print("The query to be searched is "+ args.Search_term)
+	return args
+
+def Authenticate_User(auth):
+	#Authenticate the User
+	url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
+	#url1 = 'https://api.twitter.com/oauth/access_token'
+	
+	res = requests.get(url, auth=auth)
+	return res
+	#print(res)
+
+def Create_encode_query(Base_URL,Search_term):
+	#print(Search_term)
+	
+	search_url = Base_URL + "?result_type=mixed" + "&count=100"
+
+	search_url = search_url + "&q="
+
+	res = urllib.quote(Search_term)
+	#print(res)
+	search_url = search_url + res
+	#print(search_url)
+	return search_url
+
+def Create_Request_URL(Search_term,auth):
+	#Create a Search Request
+
+	Base_URL = "https://api.twitter.com/1.1/search/tweets.json"
+
+	#Create a encoded Query
+	search_url = Create_encode_query(Base_URL,Search_term)
+
+	return search_url
+	#r = requests.get("https://api.twitter.com/1.1/search/tweets.json?"+  		#"vertical=news&q=manchester%20united&src=typd",auth=auth)
+
+def get_tweets(search_url,auth):
+	r = requests.get(search_url,auth=auth)
+	return r
+'''
+	#print(r.text)
+	#get the last since id
+	a = r.json()
+	#print("\n\n\n\n")
+	print(a["search_metadata"])
+
+	meta = a["search_metadata"]
+
+	since_id = meta["max_id_str"]
+'''
+
+
+def save_tweets(search_term,tweets_json,since_id):
+	
+	d0 = datetime.now()
+	#print('d0 :',d0)
+	cur_time = str(d0.time())
+	Cur_date = str(d0.date())
+	#print('Cur_date :',Cur_date)
+	#print('cur_time :',cur_time)
+
+	#print(str(datetime.now()))
+
+	#1. Create Folder with Current Date
+	#2. Create Folder with Search Term
+	#3. Create file of json response in that folder with time_stamp name
+
+	newpath = "./Output"
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Output Directory")
+	
+	newpath = newpath +"/" + Cur_date
+
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Date Directory")
+
+	newpath = newpath +"/" + search_term
+
+	if not os.path.exists(newpath):
+		try:
+			os.makedirs(newpath)
+		except OSError as exception:
+        		if exception.errno != errno.EEXIST:
+				print("Error during creating Search Directory")
+'''	
+	#save Since_id in search_term folder
+	sid = newpath + "/" + "since_id.txt"
+	fd = open(sid,"w")
+	fd.write(str(since_id))
+'''
+	newpath = newpath +"/" + cur_time + ".json"
+
+	_json_file_ = open(newpath, 'w')
+	_json_file_.write(tweets_json.text)
+
+
+def Main():
+	#Parse the Twitter search term
+	parser = argparse.ArgumentParser()
+	parse_result = Parse_CommandLine(parser)
+	#print(parse_result)
+	
+	auth = OAuth1('EKwc7yj7uqm2k71N5hGFQqrxd', 		'gYQC8HgieVSE50v0uelFUdTa8nqXZDR3DqhYc7F0lK1OY6biFA',
+                  '196464957-UhsygQ19Pfw3dPiAwkBxtlHLVPdRafMHECIjcsVT', 	'5aO82FMTF58G2hnB49rd7hmMiX5MqqQ7HlIWWbzjY0adY')
+
+	res = Authenticate_User(auth)
+	#print(type(res))
+
+	#Check if the Authentication was successfull
+	if res.status_code == 200:
+		#print("Authenticate Successfull")
+
+		url = Create_Request_URL(parse_result.Search_term,auth)
+
+		print("URL is "+url)
+		tweets = get_tweets(url,auth)
+
+		#Break at max limit reached
+		save_tweets(parse_result.Search_term,tweets) #,parse_result.location
+
+		#_json_file_ = open('./tweet_jsons.txt', 'w')
+		#_json_file_.write(r.text)
+
+if __name__ == "__main__":
+	Main()
+
+
+
+/////////////////
+

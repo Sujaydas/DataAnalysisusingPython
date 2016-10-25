@@ -15,6 +15,7 @@
 from __future__ import division
 import os
 import urllib
+#import urlparse
 import requests
 import argparse
 import time
@@ -429,7 +430,8 @@ def Main():
 
 		ana3_writer.writerow(Analysis3_Heading)
 		
-		
+		if Total_emotion_count == 0:
+			Total_emotion_count = 1
 		
 		ana3_output += str(direc.split('./Output/')[1]) + "," + \
 			str((tweet_anger - t1)/Total_emotion_count) + "," + \

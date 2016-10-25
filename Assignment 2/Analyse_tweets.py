@@ -15,7 +15,6 @@
 from __future__ import division
 import os
 import urllib
-#import urlparse
 import requests
 import argparse
 import time
@@ -173,8 +172,7 @@ def calculate_rating(tweet_list,_sentiment_list_):
 	global Total_emotion_count
 
 	tweet_positive = 0; tweet_neutral = 0; tweet_negative = 0
-	Total_emotion_count = 0
-
+	
 	for sentiment_itr in _sentiment_list_:
 		if sentiment_itr['Word'] in tweet_list and sentiment_itr['Positive'] == 1:
 			tweet_positive += tweet_list.count(sentiment_itr['Word'])
@@ -417,7 +415,7 @@ def Main():
 		ofile_ana3  = open(r"./Analysis_3.csv", "w")
 		ana3_writer = csv.writer(ofile_ana3, delimiter='	', quotechar='', quoting=csv.QUOTE_NONE, escapechar=" ")
 
-		Analysis3_Heading = "OVer the Range of Dates " + "," + \
+		Analysis3_Heading = "Over the Range of Dates " + "," + \
 		"% change in Anger " + "," + \
 		"% change in Anticipation" + "," + \
 		"% change in Disgust" + "," + \
@@ -429,20 +427,17 @@ def Main():
 		"Total Number of Emotions"
 
 		ana3_writer.writerow(Analysis3_Heading)
-		
-		if Total_emotion_count == 0:
-			Total_emotion_count = 1
-		
+
 		ana3_output += str(direc.split('./Output/')[1]) + "," + \
-			str((tweet_anger - t1)/Total_emotion_count) + "," + \
-			str((tweet_anticipation - t2)/Total_emotion_count) + \
+			str((tweet_anger - t1)/tweet_anger) + "," + \
+			str((tweet_anticipation - t2)/tweet_anticipation) + \
 			"," + \
-			str((tweet_disgust - t3)/Total_emotion_count) + "," + \
-			str((tweet_fear - t4)/Total_emotion_count) + "," + \
-			str((tweet_joy - t5)/Total_emotion_count) + "," + \
-			str((tweet_sadness - t6)/Total_emotion_count) + "," + \
-			str((tweet_suprise - t7)/Total_emotion_count) + "," + \
-			str((tweet_trust - t8)/Total_emotion_count) + "," + \
+			str((tweet_disgust - t3)/tweet_disgust) + "," + \
+			str((tweet_fear - t4)/tweet_fear) + "," + \
+			str((tweet_joy - t5)/tweet_joy) + "," + \
+			str((tweet_sadness - t6)/tweet_sadness) + "," + \
+			str((tweet_suprise - t7)/tweet_suprise) + "," + \
+			str((tweet_trust - t8)/tweet_trust) + "," + \
 			str(Total_emotion_count) + "\n"
 		
 		t1 = tweet_anger
@@ -455,7 +450,7 @@ def Main():
 		t8 = tweet_trust
 		ana3_writer.writerow(ana3_output)
 
-		
+		Total_emotion_count = 0
 #Analysis 3 [End]
 ###########################################################
 
@@ -517,7 +512,7 @@ def Main():
 #Analysis 5 [End]
 ########################################################
 		#test for one folde, change cnt == 2 for two folders
-		#if cnt == 1:
+		#if cnt == 2:
 			#break
 
 

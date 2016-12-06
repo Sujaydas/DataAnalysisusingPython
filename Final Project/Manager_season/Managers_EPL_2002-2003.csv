@@ -1,0 +1,39 @@
+,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,DateEpoch,Manager
+1,17/08/2002,Charlton,Chelsea,2,3,A,2,1,H,1029556800.0,Claudio Ranieri
+10,23/08/2002,Chelsea,Man United,2,2,D,2,1,H,1030075200.0,Claudio Ranieri
+26,28/08/2002,Southampton,Chelsea,1,1,D,0,0,D,1030507200.0,Claudio Ranieri
+35,1/9/2002,Chelsea,Arsenal,1,1,D,1,0,H,1030852800.0,Claudio Ranieri
+41,11/9/2002,Blackburn,Chelsea,2,3,A,2,1,H,1031716800.0,Claudio Ranieri
+50,14/09/2002,Chelsea,Newcastle,3,0,H,2,0,H,1031976000.0,Claudio Ranieri
+67,23/09/2002,Fulham,Chelsea,0,0,D,0,0,D,1032753600.0,Claudio Ranieri
+71,28/09/2002,Chelsea,West Ham,2,3,A,1,1,D,1033185600.0,Claudio Ranieri
+86,6/10/2002,Liverpool,Chelsea,1,0,H,0,0,D,1033876800.0,Claudio Ranieri
+92,19/10/2002,Man City,Chelsea,0,3,A,0,0,D,1035000000.0,Claudio Ranieri
+101,26/10/2002,Chelsea,West Brom,2,0,H,1,0,H,1035604800.0,Claudio Ranieri
+117,3/11/2002,Tottenham,Chelsea,0,0,D,0,0,D,1036296000.0,Claudio Ranieri
+122,9/11/2002,Chelsea,Birmingham,3,0,H,3,0,H,1036818000.0,Claudio Ranieri
+130,16/11/2002,Chelsea,Middlesboro,1,0,H,0,0,D,1037422800.0,Claudio Ranieri
+140,23/11/2002,Bolton,Chelsea,1,1,D,0,0,D,1038027600.0,Claudio Ranieri
+152,30/11/2002,Chelsea,Sunderland,3,0,H,0,0,D,1038632400.0,Claudio Ranieri
+162,7/12/2002,Everton,Chelsea,1,3,A,1,2,A,1039237200.0,Claudio Ranieri
+173,14/12/2002,Middlesboro,Chelsea,1,1,D,1,1,D,1039842000.0,Claudio Ranieri
+181,21/12/2002,Chelsea,Aston Villa,2,0,H,1,0,H,1040446800.0,Claudio Ranieri
+191,26/12/2002,Chelsea,Southampton,0,0,D,0,0,D,1040878800.0,Claudio Ranieri
+204,28/12/2002,Leeds,Chelsea,2,0,H,2,0,H,1041051600.0,Claudio Ranieri
+209,1/1/2003,Arsenal,Chelsea,3,2,H,1,0,H,1041397200.0,Claudio Ranieri
+218,11/1/2003,Chelsea,Charlton,4,1,H,3,1,H,1042261200.0,Claudio Ranieri
+232,18/01/2003,Man United,Chelsea,2,1,H,1,1,D,1042866000.0,Claudio Ranieri
+240,28/01/2003,Chelsea,Leeds,3,2,H,0,1,A,1043730000.0,Claudio Ranieri
+250,1/2/2003,Chelsea,Tottenham,1,1,D,1,1,D,1044075600.0,Claudio Ranieri
+258,8/2/2003,Birmingham,Chelsea,1,3,A,0,1,A,1044680400.0,Claudio Ranieri
+271,22/02/2003,Chelsea,Blackburn,1,2,A,0,0,D,1045890000.0,Claudio Ranieri
+282,1/3/2003,Newcastle,Chelsea,2,1,H,1,1,D,1046494800.0,Claudio Ranieri
+299,16/03/2003,West Brom,Chelsea,0,2,A,0,1,A,1047787200.0,Claudio Ranieri
+301,22/03/2003,Chelsea,Man City,5,0,H,2,0,H,1048305600.0,Claudio Ranieri
+316,5/4/2003,Sunderland,Chelsea,1,2,A,1,0,H,1049515200.0,Claudio Ranieri
+322,12/4/2003,Chelsea,Bolton,1,0,H,0,0,D,1050120000.0,Claudio Ranieri
+331,19/04/2003,Aston Villa,Chelsea,2,1,H,1,0,H,1050724800.0,Claudio Ranieri
+342,21/04/2003,Chelsea,Everton,4,1,H,1,0,H,1050897600.0,Claudio Ranieri
+352,26/04/2003,Chelsea,Fulham,1,1,D,1,0,H,1051329600.0,Claudio Ranieri
+367,3/5/2003,West Ham,Chelsea,1,0,H,0,0,D,1051934400.0,Claudio Ranieri
+373,11/5/2003,Chelsea,Liverpool,2,1,H,2,1,H,1052625600.0,Claudio Ranieri

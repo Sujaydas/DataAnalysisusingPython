@@ -1,0 +1,39 @@
+,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,DateEpoch,Manager
+8,12/08/07,Chelsea,Birmingham,3,2,H,2,2,D,1186891200.0,Interim Managers
+15,15/08/07,Reading,Chelsea,1,2,A,1,0,H,1187150400.0,Interim Managers
+25,19/08/07,Liverpool,Chelsea,1,1,D,1,0,H,1187496000.0,Interim Managers
+30,25/08/07,Chelsea,Portsmouth,1,0,H,1,0,H,1188014400.0,Interim Managers
+45,02/09/07,Aston Villa,Chelsea,2,0,H,0,0,D,1188705600.0,Interim Managers
+48,15/09/07,Chelsea,Blackburn,0,0,D,0,0,D,1189828800.0,Interim Managers
+65,23/09/07,Man United,Chelsea,2,0,H,1,0,H,1190520000.0,Interim Managers
+68,29/09/07,Chelsea,Fulham,0,0,D,0,0,D,1191038400.0,Interim Managers
+81,07/10/07,Bolton,Chelsea,0,1,A,0,1,A,1191729600.0,['Avram Grant']
+93,20/10/07,Middlesbrough,Chelsea,0,2,A,0,1,A,1192852800.0,['Avram Grant']
+98,27/10/07,Chelsea,Man City,6,0,H,2,0,H,1193457600.0,['Avram Grant']
+114,03/11/07,Wigan,Chelsea,0,2,A,0,2,A,1194062400.0,['Avram Grant']
+122,11/11/07,Chelsea,Everton,1,1,D,0,0,D,1194757200.0,['Avram Grant']
+130,24/11/07,Derby,Chelsea,0,2,A,0,1,A,1195880400.0,['Avram Grant']
+140,01/12/07,Chelsea,West Ham,1,0,H,0,0,D,1196485200.0,['Avram Grant']
+150,08/12/07,Chelsea,Sunderland,2,0,H,1,0,H,1197090000.0,['Avram Grant']
+167,16/12/07,Arsenal,Chelsea,1,0,H,1,0,H,1197781200.0,['Avram Grant']
+176,23/12/07,Blackburn,Chelsea,0,1,A,0,1,A,1198386000.0,['Avram Grant']
+180,26/12/07,Chelsea,Aston Villa,4,4,D,1,2,A,1198645200.0,['Avram Grant']
+190,29/12/07,Chelsea,Newcastle,2,1,H,1,0,H,1198904400.0,['Avram Grant']
+201,01/01/08,Fulham,Chelsea,1,2,A,1,0,H,1199163600.0,['Avram Grant']
+211,12/01/08,Chelsea,Tottenham,2,0,H,1,0,H,1200114000.0,['Avram Grant']
+219,19/01/08,Birmingham,Chelsea,0,1,A,0,0,D,1200718800.0,['Avram Grant']
+234,30/01/08,Chelsea,Reading,1,0,H,1,0,H,1201669200.0,['Avram Grant']
+243,02/02/08,Portsmouth,Chelsea,1,1,D,0,0,D,1201928400.0,['Avram Grant']
+256,10/02/08,Chelsea,Liverpool,0,0,D,0,0,D,1202619600.0,['Avram Grant']
+275,01/03/08,West Ham,Chelsea,0,4,A,0,3,A,1204347600.0,['Avram Grant']
+286,12/03/08,Chelsea,Derby,6,1,H,2,0,H,1205294400.0,['Avram Grant']
+292,15/03/08,Sunderland,Chelsea,0,1,A,0,1,A,1205553600.0,['Avram Grant']
+299,19/03/08,Tottenham,Chelsea,4,4,D,1,2,A,1205899200.0,['Avram Grant']
+308,23/03/08,Chelsea,Arsenal,2,1,H,0,0,D,1206244800.0,['Avram Grant']
+317,30/03/08,Chelsea,Middlesbrough,1,0,H,1,0,H,1206849600.0,['Avram Grant']
+324,05/04/08,Man City,Chelsea,0,2,A,0,1,A,1207368000.0,['Avram Grant']
+339,14/04/08,Chelsea,Wigan,1,1,D,0,0,D,1208145600.0,['Avram Grant']
+340,17/04/08,Everton,Chelsea,0,1,A,0,1,A,1208404800.0,['Avram Grant']
+351,26/04/08,Chelsea,Man United,2,1,H,1,0,H,1209182400.0,['Avram Grant']
+369,05/05/08,Newcastle,Chelsea,0,2,A,0,0,D,1209960000.0,['Avram Grant']
+371,11/05/08,Chelsea,Bolton,1,1,D,0,0,D,1210478400.0,['Avram Grant']

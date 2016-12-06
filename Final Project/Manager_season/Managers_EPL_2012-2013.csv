@@ -1,0 +1,39 @@
+,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,DateEpoch,Manager
+8,19/08/12,Wigan,Chelsea,0,2,A,0,2,A,1345348800.0,Interim Managers
+10,22/08/12,Chelsea,Reading,4,2,H,1,2,A,1345608000.0,Interim Managers
+12,25/08/12,Chelsea,Newcastle,2,0,H,2,0,H,1345867200.0,Interim Managers
+34,15/09/12,QPR,Chelsea,0,0,D,0,0,D,1347681600.0,Interim Managers
+39,22/09/12,Chelsea,Stoke,1,0,H,0,0,D,1348286400.0,Interim Managers
+49,29/09/12,Arsenal,Chelsea,1,2,A,1,1,D,1348891200.0,Interim Managers
+59,06/10/12,Chelsea,Norwich,4,1,H,3,1,H,1349496000.0,Interim Managers
+74,20/10/12,Tottenham,Chelsea,2,4,A,0,1,A,1350705600.0,Interim Managers
+85,28/10/12,Chelsea,Man United,2,3,A,1,2,A,1351396800.0,Interim Managers
+93,03/11/12,Swansea,Chelsea,1,1,D,0,0,D,1351915200.0,Interim Managers
+106,11/11/12,Chelsea,Liverpool,1,1,D,1,0,H,1352610000.0,Interim Managers
+116,17/11/12,West Brom,Chelsea,2,1,H,1,1,D,1353128400.0,Interim Managers
+125,25/11/12,Chelsea,Man City,0,0,D,0,0,D,1353819600.0,['Rafael Benítez']
+131,28/11/12,Chelsea,Fulham,0,0,D,0,0,D,1354078800.0,['Rafael Benítez']
+146,01/12/12,West Ham,Chelsea,3,1,H,0,1,A,1354338000.0,['Rafael Benítez']
+152,08/12/12,Sunderland,Chelsea,1,3,A,0,2,A,1354942800.0,['Rafael Benítez']
+177,23/12/12,Chelsea,Aston Villa,8,0,H,3,0,H,1356238800.0,['Rafael Benítez']
+183,26/12/12,Norwich,Chelsea,0,1,A,0,1,A,1356498000.0,['Rafael Benítez']
+196,30/12/12,Everton,Chelsea,1,2,A,1,1,D,1356843600.0,['Rafael Benítez']
+205,02/01/13,Chelsea,QPR,0,1,A,0,0,D,1357102800.0,['Rafael Benítez']
+214,12/01/13,Stoke,Chelsea,0,4,A,0,1,A,1357966800.0,['Rafael Benítez']
+218,16/01/13,Chelsea,Southampton,2,2,D,2,0,H,1358312400.0,['Rafael Benítez']
+226,20/01/13,Chelsea,Arsenal,2,1,H,2,0,H,1358658000.0,['Rafael Benítez']
+239,30/01/13,Reading,Chelsea,2,2,D,0,1,A,1359522000.0,['Rafael Benítez']
+243,02/02/13,Newcastle,Chelsea,3,2,H,1,0,H,1359781200.0,['Rafael Benítez']
+250,09/02/13,Chelsea,Wigan,4,1,H,1,0,H,1360386000.0,['Rafael Benítez']
+267,24/02/13,Man City,Chelsea,2,0,H,0,0,D,1361682000.0,['Rafael Benítez']
+270,02/03/13,Chelsea,West Brom,1,0,H,1,0,H,1362200400.0,['Rafael Benítez']
+292,17/03/13,Chelsea,West Ham,2,0,H,1,0,H,1363492800.0,['Rafael Benítez']
+299,30/03/13,Southampton,Chelsea,2,1,H,2,1,H,1364616000.0,['Rafael Benítez']
+310,07/04/13,Chelsea,Sunderland,2,1,H,0,1,A,1365307200.0,['Rafael Benítez']
+324,17/04/13,Fulham,Chelsea,0,3,A,0,2,A,1366171200.0,['Rafael Benítez']
+334,21/04/13,Liverpool,Chelsea,2,2,D,0,1,A,1366516800.0,['Rafael Benítez']
+344,28/04/13,Chelsea,Swansea,2,0,H,2,0,H,1367121600.0,['Rafael Benítez']
+355,05/05/13,Man United,Chelsea,0,1,A,0,0,D,1367726400.0,['Rafael Benítez']
+359,08/05/13,Chelsea,Tottenham,2,2,D,2,1,H,1367985600.0,['Rafael Benítez']
+360,11/05/13,Aston Villa,Chelsea,1,2,A,1,0,H,1368244800.0,['Rafael Benítez']
+370,19/05/13,Chelsea,Everton,2,1,H,1,1,D,1368936000.0,['Rafael Benítez']

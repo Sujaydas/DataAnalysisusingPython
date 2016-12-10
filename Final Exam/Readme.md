@@ -4,13 +4,13 @@
 
 [Motivation](.#motivation)
 
-[Analysis 1](.#analysis-1)
+* [Analysis 1](.#analysis-1)
 
-    * [Information](.#information)
+     * [Information](.#information)
         
-    * [Input](.#input)
+     * [Input](.#input)
       
-    * [Output](.#output)
+     * [Output](.#output)
         
 
 ## Introduction

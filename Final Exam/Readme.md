@@ -39,3 +39,7 @@ E0	19/08/06	Everton	Watford	2	1	H	1	0	H	P Walton	6	12	2	8	12	13
 E0	19/08/06	Newcastle	Wigan	2	1	H	1	0	H	M Atkinson	9	14	8	9	17	20
 E0	19/08/06	Portsmouth	Blackburn	3	0	H	1	0	H	A Wiley	21	9	16	7	20	17
 E0	19/08/06	Reading	Middlesbrough	3	2	H	2	2	D	M Halsey	14	7	9	5	8	15
+
+
+![analysis1](https://cloud.githubusercontent.com/assets/8064761/21072053/c21777de-be83-11e6-96a1-19e8fb311bb7.jpeg)
+

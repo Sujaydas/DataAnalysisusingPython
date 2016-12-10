@@ -19,9 +19,12 @@ Input:
 --------------
 
 Data set snippet shown below shows the Football league data over the last 10 years, where each season csv content is shown below, 
+
+![1](https://cloud.githubusercontent.com/assets/8064761/21072083/ec3edad8-be84-11e6-8f35-e66d31bace16.jpeg)
+
 Acronyms details are as:
 
-
+![2](https://cloud.githubusercontent.com/assets/8064761/21072093/2ec4ff0e-be85-11e6-8413-b9b6081f1c97.jpeg)
 
 ![analysis1](https://cloud.githubusercontent.com/assets/8064761/21072053/c21777de-be83-11e6-96a1-19e8fb311bb7.jpeg)
 

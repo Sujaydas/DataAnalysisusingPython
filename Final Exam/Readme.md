@@ -1,6 +1,6 @@
 ## Table of Contents
 ==============
-[Analysis 3](#-analysis-3)
+[Analysis 3](.#-analysis-3)
 
 
 ## Introduction

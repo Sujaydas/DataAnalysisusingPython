@@ -57,3 +57,28 @@ AS Shown below, the Analysis is done to check the manager does have impact on th
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072166/2bd0e9b4-be87-11e6-8d3e-6c7c81d0b4df.png)
 
+
+
+## Analysis 3
+==============
+
+Question Asked: How the scoring trend for a team has been, Does being in top position or lower position in table matters!!!
+--------------
+
+Input:
+--------------
+Data set snippet shown below shows the Goals scored by a team in the Year 2005-2006 , with the range 10 minutes gap
+
+![1](https://cloud.githubusercontent.com/assets/8064761/21072198/3808d7a4-be88-11e6-96dd-4954d1dc37f8.png)
+
+Below data snippet the data from the 2005-2006 Table with team rankings, 
+
+![2](https://cloud.githubusercontent.com/assets/8064761/21072201/3ca7c996-be88-11e6-8a05-ced72d257932.jpeg)
+
+
+
+Output:
+--------------
+AS Shown below, position of team is mapped to the scoring of goals in different minutes.
+
+![3](https://cloud.githubusercontent.com/assets/8064761/21072202/3f68660e-be88-11e6-8816-b8e2c87f4e13.png)

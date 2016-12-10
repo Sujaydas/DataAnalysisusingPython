@@ -1,6 +1,6 @@
 ## Table of Contents
 ==============
-[Link to a header](# Analysis 3)
+[Analysis 3](#Analysis-3)
 
 
 ## Introduction

@@ -10,7 +10,13 @@
      * [Input](.#input)      
      * [Output](.#output)
         
+* [Analysis 2](.#analysis-2)
 
+     * [Information](.#information)        
+     * [Input](.#input)      
+     * [Output](.#output)
+        
+        
 ## Introduction
 ==============
 
@@ -56,6 +62,9 @@ It shows different attributes such as, Percentage change in the Number of points
 Question Asked: Does Different Manager have effect on the Team Performance!!!!
 --------------
 
+Information:
+--------------
+
 Input:
 --------------
 
@@ -80,6 +89,9 @@ AS Shown below, the Analysis is done to check the manager does have impact on th
 ==============
 
 Question Asked: How the scoring trend for a team has been, Does being in top position or lower position in table matters!!!
+--------------
+
+Information:
 --------------
 
 Input:
@@ -107,6 +119,9 @@ AS Shown below, position of team is mapped to the scoring of goals in different 
 Question Asked: How Composed the team are, when they are in top of the league and when they are losing matches, does fouls related to positions??!!!
 --------------
 
+Information:
+--------------
+
 Input:
 --------------
 Data set snippet shown below shows the Shots Hit on Target, Yellow cards conceeded, Red cards conceeded ate Home/Away, Fouls Committed
@@ -130,6 +145,9 @@ AS Shown below, When the position of the team is higher, Shot accuracy, is very 
 ==============
 
 Question Asked: Can we make the Prediction of the upcoming Matches, based on the past meetings, current form. 
+--------------
+
+Information:
 --------------
 
 Input:

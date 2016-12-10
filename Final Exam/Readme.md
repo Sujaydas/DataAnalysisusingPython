@@ -82,3 +82,52 @@ Output:
 AS Shown below, position of team is mapped to the scoring of goals in different minutes.
 
 ![3](https://cloud.githubusercontent.com/assets/8064761/21072202/3f68660e-be88-11e6-8816-b8e2c87f4e13.png)
+
+
+## Analysis 4
+==============
+
+Question Asked: How Composed the team are, when they are in top of the league and when they are losing matches, does fouls related to positions??!!!
+--------------
+
+Input:
+--------------
+Data set snippet shown below shows the Shots Hit on Target, Yellow cards conceeded, Red cards conceeded ate Home/Away, Fouls Committed
+
+![1](https://cloud.githubusercontent.com/assets/8064761/21072234/7174a968-be89-11e6-814e-72b45c372678.jpeg)
+
+Below data snippet shows the expansion of the acronym, 
+
+![2](https://cloud.githubusercontent.com/assets/8064761/21072235/7357742c-be89-11e6-804a-a84fe694174d.jpeg)
+
+
+Output:
+--------------
+AS Shown below, When the position of the team is higher, Shot accuracy, is very good, and team is very well composed(not making much fouls),
+
+![3](https://cloud.githubusercontent.com/assets/8064761/21072238/761ed4f2-be89-11e6-9123-2d33fca1c286.png)
+
+
+
+## Analysis 5
+==============
+
+Question Asked: Can we make the Prediction of the upcoming Matches, based on the past meetings, current form. 
+--------------
+
+Input:
+--------------
+Data set snippet shown below shows detailed data of 2006-2007 , with full time score, half time score, Result of match
+
+![1](https://cloud.githubusercontent.com/assets/8064761/21072271/a8dfa73a-be8a-11e6-9657-767f5a22705a.jpeg)
+
+Output:
+--------------
+AS Shown below, it shows graph for the Form aganist the different Top teams and the prediction of winning aganist the team at Home, 
+
+![2](https://cloud.githubusercontent.com/assets/8064761/21072272/aa25c6ec-be8a-11e6-9567-19e86139094b.png)
+
+
+
+
+

@@ -29,7 +29,12 @@
 ## Introduction
 ==============
 
-This Project Performs extensive analysis on the English Premier League Football/Soccer Data Set.
+This Project Performs extensive analysis on the English Premier League Football/Soccer Data Set. This is open source data set provided and maintained by [Football.data.co.uk] (http://www.football-data.co.uk/englandm.php). 
+
+## Data Set - 1
+================
+
+I have used data from 2000/2001 - 2016/2017 english premier league data, which is located at the repository [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data). Small snippet of the [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) is shown below. Each of the .csv file is the information about the entire season, it has information about the date of each game, teams names, goals from each time, full time details, half time details, how many fouls, yellow cards, red cards count.
 
 
 ## Motivation

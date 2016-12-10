@@ -1,7 +1,8 @@
 ## Table of Contents
 ==============
-[Analysis 3](.#output)
-
+[Introduction](.#-Introduction)
+[Motivation](.#-Motivation)
+[Analysis 1](.#-Analysis 1)
 
 ## Introduction
 ==============
@@ -9,12 +10,12 @@
 This Project Performs extensive analysis on the English Premier League Football/Soccer Data Set.
 
 
-##Motivation
+## Motivation
 ==============
 
 Because of the way the human brain processes information, using charts or graphs to visualize large amounts of complex data is easier than poring over spreadsheets or reports. Data visualization is a quick, easy way to convey concepts in a universal manner – and you can experiment with different scenarios by making slight adjustments.
 
-##Analysis 1
+## Analysis 1
 ==============
 
 Question Asked: How is the Team performing over the last 10 years, are they doing good in terms of points/at home , how they doing away?

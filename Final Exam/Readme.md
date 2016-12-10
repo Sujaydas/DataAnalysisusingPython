@@ -26,5 +26,9 @@ Acronyms details are as:
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072107/7ac1d9c2-be85-11e6-96d3-b5d3a0dc4a4d.jpeg)
 
+Output:
+--------------
+It shows different attributes such as, Number of Home Wins, Away Wins, Home Goals Scored for a particular team.
+
 ![analysis1](https://cloud.githubusercontent.com/assets/8064761/21072053/c21777de-be83-11e6-96a1-19e8fb311bb7.jpeg)
 

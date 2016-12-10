@@ -1,10 +1,10 @@
 ## Table of Contents
 ==============
-[Introduction](.#-Introduction)
+[Introduction](.#-introduction)
 
-[Motivation](.#-Motivation)
+[Motivation](.#-motivation)
 
-[Analysis 1](.#-Analysis 1)
+[Analysis 1](.#-analysis-1)
 
 ## Introduction
 ==============

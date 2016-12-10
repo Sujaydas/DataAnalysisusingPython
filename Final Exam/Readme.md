@@ -1,7 +1,12 @@
+## Table of Contents
+==============
+[Link to a header](# Introduction)
+
+
 ## Introduction
 ==============
 
-This Project Performs extensive analysis on the  English Premier League Football/Soccer Data Set.
+This Project Performs extensive analysis on the English Premier League Football/Soccer Data Set.
 
 
 ## Motivation

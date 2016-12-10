@@ -6,11 +6,11 @@
 
 [Analysis 1](.#analysis-1)
 
-        [Information](.#information)
+   [Information](.#information)
         
-        [Input](.#input)
-        
-        [Output](.#output)
+   [Input](.#input)
+      
+   [Output](.#output)
         
 
 ## Introduction

@@ -1,7 +1,9 @@
 ## Table of Contents
 ==============
 [Introduction](.#-Introduction)
+
 [Motivation](.#-Motivation)
+
 [Analysis 1](.#-Analysis 1)
 
 ## Introduction

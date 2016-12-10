@@ -1,12 +1,13 @@
 ## Table of Contents
 ==============
-[Introduction](.#-introduction)
+[Introduction](.#introduction)
 
-[Motivation](.###-motivation)
+[Motivation](.#motivation)
 
-[Analysis 1](.#-analysis-)
-
-[Output](.#output-1)
+[Analysis 1](.#analysis-1)
+        [Information](.#information)
+        [Input](.#input)
+        [Output](.#output)
 
 ## Introduction
 ==============
@@ -23,6 +24,9 @@ Because of the way the human brain processes information, using charts or graphs
 ==============
 
 Question Asked: How is the Team performing over the last 10 years, are they doing good in terms of points/at home , how they doing away?
+--------------
+
+Information:
 --------------
 
 Input:

@@ -179,4 +179,7 @@ for label_idx in range(0,Annotation_comp_len):
             horizontalalignment='left', verticalalignment='top',fontsize=20)		
 			
 			
-plt.savefig(r'C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis4.jpeg')			
+plt.savefig(r'C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis4.jpeg')		
+
+Analysis4_plot_df_file = r"C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis_4.csv"
+Analysis4_plot_df.to_csv(Analysis4_plot_df_file, sep=',', encoding='utf-8') 	

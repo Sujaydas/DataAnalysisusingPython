@@ -153,16 +153,40 @@ Question Asked: Does Different Manager have effect on the Team Performance!!!!
 
 Information:
 --------------
+This Analysis uses the data [Managers Data] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_2/Manager/EPL_Managers.csv), which is the collection of data about the managers for all clubs in english premier league from 1990 - Current.  
+
+It also uses Data set League Data set, [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) is shown below. Each of the .csv file is the information about the entire season, it has information about the date of each game, teams names, goals from each time, full time details, half time details, how many fouls, yellow cards, red cards count.
+
+This Analysis gives information about how the team is performing under different managers, on the selected team using the above Data sets. 
 
 Input:
 --------------
 
-To Map which Manager was in Club From what time to End Time, I have used this data set
+To Map which Manager was in Club From what time to End Time, I have used the Manager set and got the preprocessed data as below
 
-![3](https://cloud.githubusercontent.com/assets/8064761/21072165/24de39a4-be87-11e6-8d85-60af809f20c9.jpeg)
+![analysis_2_1](https://cloud.githubusercontent.com/assets/8064761/21077920/564d672e-bf29-11e6-9d0c-1f16869ac996.png)
+
+![analysis_2_2](https://cloud.githubusercontent.com/assets/8064761/21077924/a33263aa-bf29-11e6-9666-8c0c770fd4d2.png)
+
+And Using the [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) data set, I match Manager time with the club matches to get the corresponding winning and loss, points information, 
+
+Another Intermediate Output will have Manager data mapped to League matches data as 
+
+![analysis_2_3](https://cloud.githubusercontent.com/assets/8064761/21077943/121330ec-bf2a-11e6-9ad5-200d81d997a0.png)
+
+
 
 Output:
 --------------
+
+
+It shows different attributes such as, Number of points, Number of Home Wins, Away Wins, Home Goals Scored for a particular team over the years under particular Manager
+
+Output csv for the Analysis 2 can be found at [Analysis_2.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_2.csv)
+
+Output Plot can be found in repository at [Analysis_2 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis2.jpeg)
+
+
 
 Created a Map matching the managers performance for a particular season, where each season csv content is shown below,
 

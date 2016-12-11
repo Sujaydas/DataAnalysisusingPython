@@ -381,9 +381,3 @@ Output Plot can be found in repository at [Analysis_5 Plot] (https://github.com/
 AS Shown below, it shows graph for the Form aganist the different Top teams and the prediction of winning aganist the team at Home, 
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072272/aa25c6ec-be8a-11e6-9567-19e86139094b.png)
-
-
-
-
-
->>>>>>> 1df62ddcb8182e574c5223f7e6fa0f883615cf27

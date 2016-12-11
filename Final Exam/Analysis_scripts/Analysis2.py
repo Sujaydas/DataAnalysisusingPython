@@ -250,6 +250,10 @@ for Manager_file_ in glob("C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Input\
 all_years_managers = all_years_managers.drop(all_years_managers.index[0])
 #all_years_managers
 
+all_years_managers_file = "C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis_2.csv"
+all_years_managers.to_csv(all_years_managers_file, sep=',', encoding='utf-8')
+
+
 req_cols = ['Wins','Losses','Goals Conceeded', 'Goals scored']
 all_df = []
 

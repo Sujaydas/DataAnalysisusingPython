@@ -49,7 +49,7 @@ Again, the acroynm and explanation about the each column and there meaning can b
 
 ## Data Set - 2
 ================
-This data is the collection of data about the managers for all clubs in english premier league from 1990 - Current. This data can be foudn in repository at [Managers Data] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_2/Manager/EPL_Managers.csv). Snippet of the Managers data set is shown below. Information in Mangers data set are name of the manager, Team the manager has managed, from which year to which year, number of days he handled the team.
+This data is the collection of data about the managers for all clubs in english premier league from 1990 - Current. This data can be found in repository at [Managers Data] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_2/Manager/EPL_Managers.csv). Snippet of the Managers data set is shown below. Information in Mangers data set are name of the manager, Team the manager has managed, from which year to which year, number of days he handled the team.
 
 Name             |  Nat.  |  Club     |  From       |  Until      |  Duration (days)  |  Years in Premier League
 -----------------|--------|-----------|-------------|-------------|-------------------|-------------------------
@@ -74,6 +74,21 @@ Blackburn    |  3     |  5     |  7       |  3       |  1      |  2      |  8   
 
 
 Top Column is the range of minutes. 0 - 10 columns is the column where the teams have scored the goals in 0 - 10 minutes. Sub column 'A' and 'F' contains the number of goals a team have conceeded ('A' = Aganist a team in that 0 - 10 minute range) and Scored ('F' = Far a team in that 0 - 10 minute range) 
+
+## Data Set - 4
+================
+This Data set is Premier League Season Table for entire season. I have collected the from Season 2005/2006 to 2013/2014. This Data Set can be found at [League Table Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/League_Table). Each csvn file contains the information about the position the each team/club ended up with. It has information about Number of matches each team has won, lost, drew. Goals scored, Goals defended and Total Points at the end of the league. League csv file can be found at [League csv File] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_3/League_Table/League_2006-2007.csv). Small snippet can be found below.
+
+Pos  |  Team               |  Pld  |  W   |  D   |  L   |  GF  |  GA  |  GD  |  Pts  |  Qualification or relegation
+-----|---------------------|-------|------|------|------|------|------|------|-------|--------------------------------------------------------
+1    |  Chelsea?▒(C)       |  38   |  29  |  4   |  5   |  72  |  22  |  50  |  91   |  2006▒??07 UEFA Champions League Group stage
+2    |  Manchester United  |  38   |  25  |  8   |  5   |  72  |  34  |  38  |  83   |
+3    |  Liverpool          |  38   |  25  |  7   |  6   |  57  |  25  |  32  |  82   |  2006▒??07 UEFA Champions League Third qualifying round
+4    |  Arsenal            |  38   |  20  |  7   |  11  |  68  |  31  |  37  |  67   |
+5    |  Tottenham Hotspur  |  38   |  18  |  11  |  9   |  53  |  38  |  15  |  65   |  2006▒??07 UEFA Cup First round
+
+
+
 
 ## Motivation
 ==============

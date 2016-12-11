@@ -128,15 +128,17 @@ How to run the program:
 --------------
 
   * Provide team name to be analysed in the python arguments as
+  
       python Analysis_1.py "Man United"
 
 Output:
 --------------
 It shows different attributes such as, Percentage change in the Number of points, Number of Home Wins, Away Wins, Home Goals Scored for a particular team over the years.
 
-Output csv for the Analysis 1 can be found at [Analysis_1.csv] (#das)
+Output csv for the Analysis 1 can be found at [Analysis_1.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_1.csv)
 Output Plot can be found in repository at [Analysis_1 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis1.jpeg)
 
+Plot depicts the how the team is scoring at home, at away, and getting hit at home and away.
 
 ## Analysis 2
 ==============

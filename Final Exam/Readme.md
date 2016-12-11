@@ -32,7 +32,8 @@ This Project Performs extensive analysis on the English Premier League Football/
 
 ## Data Set - 1
 ================
-I have used data from 2000/2001 - 2016/2017 english premier league data, which is located at the repository [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data). Small snippet of the [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) is shown below. Each of the .csv file is the information about the entire season, it has information about the date of each game, teams names, goals from each time, full time details, half time details, how many fouls, yellow cards, red cards count.
+I have used data from 2000/2001 - 2016/2017 english premier league data, which is located at the repository [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data). Small snippet of the [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) is shown below. Each of the .csv file is the information about the entire season, it has information about the date of each game, teams names, goals from each time, full time details, half time details, how many fouls, yellow cards, red cards count. Acronym details can be found in repository [Acronym] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Notes.txt)
+
 
 
 Div  |  Date      |  HomeTeam  |  AwayTeam       |  FTHG  |  FTAG  |  FTR  |  HTHG  |  HTAG  |  HTR  |  Attendance  |  Referee        |  HS  |  AS  |  HST  |  AST  |  HHW  |  AHW  |  HC  |  AC  |  HF  |  AF  |  HO  |  AO  |  HY  |  AY  |  HR  |  AR
@@ -41,6 +42,38 @@ E0   |  19/08/00  |  Charlton  |  Man City       |  4     |  0     |  H    |  2 
 E0   |  19/08/00  |  Chelsea   |  West Ham       |  4     |  2     |  H    |  1     |  0     |  H    |  34914       |  Graham Barber  |  17  |  12  |  10   |  5    |  1    |  0    |  7   |  7   |  19  |  14  |  2   |  3   |  1   |  2   |  0   |  0
 E0   |  19/08/00  |  Coventry  |  Middlesbrough  |  1     |  3     |  A    |  1     |  1     |  D    |  20624       |  Barry Knight   |  6   |  16  |  3    |  9    |  0    |  1    |  8   |  4   |  15  |  21  |  1   |  3   |  5   |  3   |  1   |  0
 E0   |  19/08/00  |  Derby     |  Southampton    |  2     |  2     |  D    |  1     |  2     |  A    |  27223       |  Andy D'Urso    |  6   |  13  |  4    |  6    |  0    |  0    |  5   |  8   |  11  |  13  |  0   |  2   |  1   |  1   |  0   |  0
+
+This data specifies Charlton and Manchester City has played a match on 19/08/2000 , where the full time score is 4-0 (FTHG = 4) favour of home team(charlton), Charlton has won the match indicated by the FTR = 'H'. Charlton has scored 2 goals in the first half (HTHG = 2).
+Again, the acroynm and explanation about the each column and there meaning can be found at [Match Abbrevations] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Notes.txt)
+
+
+## Data Set - 2
+================
+This data is the collection of data about the managers for all clubs in english premier league from 1990 - Current. This data can be foudn in repository at [Managers Data] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_2/Manager/EPL_Managers.csv). Snippet of the Managers data set is shown below. Information in Mangers data set are name of the manager, Team the manager has managed, from which year to which year, number of days he handled the team.
+
+Name             |  Nat.  |  Club     |  From       |  Until      |  Duration (days)  |  Years in Premier League
+-----------------|--------|-----------|-------------|-------------|-------------------|-------------------------
+George Graham    |        |  Arsenal  |  14-May-86  |  21-Feb-95  |  3205             |  1992▒??1995
+Stewart Houston  |        |  Arsenal  |  22-Feb-95  |  8-Jun-95   |  106              |  1995
+Bruce Rioch      |        |  Arsenal  |  8-Jun-95   |  12-Aug-96  |  431              |  1995▒??1996
+Stewart Houston  |        |  Arsenal  |  12-Aug-96  |  13-Sep-96  |  32               |  1996
+
+
+
+## Data Set - 3
+================
+This data set is collection of total Number of goals scored by each team/club in offset of 10 minutes for a season. I have collected the Data from 2005-2006 to 2013-2014. The data set can be found [Goal Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/Goals). Each csv has information about the Name of the team played in that season and how many goals they scored in 10 minutes range. The goal data set csv can be found at [Goal Season CSV] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_3/Goals/Goal_time_2005-2006.csv). Snippet of the Data set is shown below.
+
+             |  0-10  |  0-10  |  20-Nov  |  20-Nov  |  21-30  |  21-30  |  31-40  |  31-40  |  41-50  |  41-50  |  51-60  |  51-60  |  61-70  |  61-70  |  71-80  |  71-80  |  81-90  |  81-90
+-------------|--------|--------|----------|----------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-------
+             |  F     |  A     |  F       |  A       |  F      |  A      |  F      |  A      |  F      |  A      |  F      |  A      |  F      |  A      |  F      |  A      |  F      |  A
+Arsenal      |  4     |  1     |  10      |  5       |  7      |  3      |  9      |  7      |  8      |  1      |  5      |  2      |  2      |  2      |  8      |  8      |  15     |  2
+Aston Villa  |  4     |  6     |  5       |  4       |  3      |  8      |  2      |  4      |  5      |  8      |  5      |  5      |  6      |  5      |  6      |  5      |  6      |  10
+Birmingham   |  4     |  5     |  3       |  9       |  2      |  2      |  5      |  2      |  1      |  8      |  1      |  3      |  2      |  10     |  5      |  7      |  5      |  4
+Blackburn    |  3     |  5     |  7       |  3       |  1      |  2      |  8      |  4      |  7      |  8      |  6      |  2      |  6      |  11     |  7      |  4      |  6      |  3
+
+
+Top Column is the range of minutes. 0 - 10 columns is the column where the teams have scored the goals in 0 - 10 minutes. Sub column 'A' and 'F' contains the number of goals a team have conceeded ('A' = Aganist a team in that 0 - 10 minute range) and Scored ('F' = Far a team in that 0 - 10 minute range) 
 
 ## Motivation
 ==============

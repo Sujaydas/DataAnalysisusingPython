@@ -273,7 +273,7 @@ Plot - Analysis 3
 
 AS Shown below, position of team is mapped to the scoring of goals in different minutes.
 
-![download 6](https://cloud.githubusercontent.com/assets/8064761/21078334/5449cd7c-bf39-11e6-859a-f79631779609.png)
+![download 7](https://cloud.githubusercontent.com/assets/8064761/21078347/9ae940b4-bf39-11e6-8062-bf110cf23920.png)
 
 
 ## Analysis 4

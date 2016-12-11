@@ -1,6 +1,10 @@
 ## Table of Contents
 ==============
-[Introduction](.#introduction)
+* [Introduction](.#introduction)
+    * [Data Set 1](.#data-set---1)
+    * [Data Set 2](.#data-set---2)
+    * [Data Set 3](.#data-set---3)
+    * [Data Set 4](.#data-set---4)
 
 [Motivation](.#motivation)
 
@@ -86,8 +90,6 @@ Pos  |  Team               |  Pld  |  W   |  D   |  L   |  GF  |  GA  |  GD  |  
 3    |  Liverpool          |  38   |  25  |  7   |  6   |  57  |  25  |  32  |  82   |  2006▒??07 UEFA Champions League Third qualifying round
 4    |  Arsenal            |  38   |  20  |  7   |  11  |  68  |  31  |  37  |  67   |
 5    |  Tottenham Hotspur  |  38   |  18  |  11  |  9   |  53  |  38  |  15  |  65   |  2006▒??07 UEFA Cup First round
-
-
 
 
 ## Motivation

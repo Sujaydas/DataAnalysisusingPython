@@ -28,14 +28,19 @@
      
 ## Introduction
 ==============
-
 This Project Performs extensive analysis on the English Premier League Football/Soccer Data Set. This is open source data set provided and maintained by [Football.data.co.uk] (http://www.football-data.co.uk/englandm.php). 
 
 ## Data Set - 1
 ================
-
 I have used data from 2000/2001 - 2016/2017 english premier league data, which is located at the repository [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data). Small snippet of the [EPL_2000-2001] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Data/EPL_2000-2001.csv) is shown below. Each of the .csv file is the information about the entire season, it has information about the date of each game, teams names, goals from each time, full time details, half time details, how many fouls, yellow cards, red cards count.
 
+
+Div  |  Date      |  HomeTeam  |  AwayTeam       |  FTHG  |  FTAG  |  FTR  |  HTHG  |  HTAG  |  HTR  |  Attendance  |  Referee        |  HS  |  AS  |  HST  |  AST  |  HHW  |  AHW  |  HC  |  AC  |  HF  |  AF  |  HO  |  AO  |  HY  |  AY  |  HR  |  AR
+-----|------------|------------|-----------------|--------|--------|-------|--------|--------|-------|--------------|-----------------|------|------|-------|-------|-------|-------|------|------|------|------|------|------|------|------|------|----
+E0   |  19/08/00  |  Charlton  |  Man City       |  4     |  0     |  H    |  2     |  0     |  H    |  20043       |  Rob Harris     |  17  |  8   |  14   |  4    |  2    |  1    |  6   |  6   |  13  |  12  |  8   |  6   |  1   |  2   |  0   |  0
+E0   |  19/08/00  |  Chelsea   |  West Ham       |  4     |  2     |  H    |  1     |  0     |  H    |  34914       |  Graham Barber  |  17  |  12  |  10   |  5    |  1    |  0    |  7   |  7   |  19  |  14  |  2   |  3   |  1   |  2   |  0   |  0
+E0   |  19/08/00  |  Coventry  |  Middlesbrough  |  1     |  3     |  A    |  1     |  1     |  D    |  20624       |  Barry Knight   |  6   |  16  |  3    |  9    |  0    |  1    |  8   |  4   |  15  |  21  |  1   |  3   |  5   |  3   |  1   |  0
+E0   |  19/08/00  |  Derby     |  Southampton    |  2     |  2     |  D    |  1     |  2     |  A    |  27223       |  Andy D'Urso    |  6   |  13  |  4    |  6    |  0    |  0    |  5   |  8   |  11  |  13  |  0   |  2   |  1   |  1   |  0   |  0
 
 ## Motivation
 ==============

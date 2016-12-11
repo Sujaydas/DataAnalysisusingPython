@@ -175,3 +175,5 @@ for label_idx in range(0,Annotation_len):
 
 plt.savefig(r'C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis3.jpeg')
 
+Analysis3_plot_df_file = "C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis_3.csv"
+Analysis3_plot_df.to_csv(Analysis3_plot_df_file, sep=',', encoding='utf-8')

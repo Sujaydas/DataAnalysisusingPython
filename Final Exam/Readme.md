@@ -207,21 +207,57 @@ Question Asked: How the scoring trend for a team has been, Does being in top pos
 
 Information:
 --------------
+This Analysis uses the data [Goal Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/Goals), which is the Name of the team played in that season and how many goals they scored in 10 minutes range.  
+
+It also uses Data set [League Table Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/League_Table). Each of the .csv file in the information about the position the each team/club ended up with. It has information about Number of matches each team has won, lost, drew. Goals scored, Goals defended and Total Points at the end of the league.
+
+This Analysis gives information about team scoring at different minutes of match, and to add complexity how the team is scoring at different position in the league table
 
 Input:
 --------------
+
+Pre- Processing:
+--------------
+
 Data set snippet shown below shows the Goals scored by a team in the Year 2005-2006 , with the range 10 minutes gap
 
 ![1](https://cloud.githubusercontent.com/assets/8064761/21072198/3808d7a4-be88-11e6-96dd-4954d1dc37f8.png)
+
+[Goal Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/Goals),is processed to change the column names since the column name after 0- 10 is in date format, these kind of columns are cleaned to below shown data frame.
+
+
+   |  Teams    |  Far in 10 minutes  |  Aganist in 10 minutes  |  Far in 20 minutes  |  Aganist in 20 minutes  |  Far in 30 minutes  |  Aganist in 30 minutes  |  Far in 40 minutes  |  Aganist in 40 minutes  |  Far in 50 minutes  |  Aganist in 50 minutes  |  Far in 60 minutes  |  Aganist in 60 minutes  |  Far in 70 minutes  |  Aganist in 70 minutes  |  Far in 80 minutes  |  Aganist in 80 minutes  |  Far in 90 minutes  |  Aganist in 90 minutes  |  Year
+---|-----------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|-----------
+7  |  Chelsea  |  3                  |  3                      |  4                  |  3                      |  11                 |  2                      |  4                  |  2                      |  9                  |  6                      |  11                 |  2                      |  11                 |  1                      |  14                 |  2                      |  5                  |  1                      |  2005-2006
+6  |  Chelsea  |  5                  |  1                      |  6                  |  3                      |  5                  |  2                      |  8                  |  2                      |  8                  |  4                      |  7                  |  3                      |  10                 |  3                      |  6                  |  3                      |  9                  |  3                      |  2006-2007
+
+
+
 
 Below data snippet the data from the 2005-2006 Table with team rankings, 
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072201/3ca7c996-be88-11e6-8a05-ced72d257932.jpeg)
 
+After merging and processing below frame is obtained
 
+   |  Year       |  Pos  |  Team          |  Far in 10 minutes  |  Aganist in 10 minutes  |  Far in 20 minutes  |  Aganist in 20 minutes  |  Far in 30 minutes  |  Aganist in 30 minutes  |  Far in 40 minutes  |  Aganist in 40 minutes  |  Far in 50 minutes  |  Aganist in 50 minutes  |  Far in 60 minutes  |  Aganist in 60 minutes  |  Far in 70 minutes  |  Aganist in 70 minutes  |  Far in 80 minutes  |  Aganist in 80 minutes  |  Far in 90 minutes  |  Aganist in 90 minutes  |  Aganist  in 10 minutes  |  Aganist  in 20 minutes  |  Aganist  in 30 minutes  |  Aganist  in 40 minutes  |  Aganist  in 50 minutes  |  Aganist  in 60 minutes  |  Aganist  in 70 minutes  |  Aganist  in 80 minutes  |  Aganist  in 90 minutes
+---|-------------|-------|----------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|---------------------|-------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|--------------------------|------------------------
+0  |  2005-2006  |  1    |  Chelsea (C)  |  3                  |  3                      |  4                  |  3                      |  11                 |  2                      |  4                  |  2                      |  9                  |  6                      |  11                 |  2                      |  11                 |  1                      |  14                 |  2                      |  5                  |  1                      |  3                       |  3                       |  2                       |  2                       |  6                       |  2                       |  1                       |  2                       |  1
+1  |  2006-2007  |  2    |  Chelsea       |  5                  |  1                      |  6                  |  3                      |  5                  |  2                      |  8                  |  2                      |  8                  |  4                      |  7                  |  3                      |  10                 |  3                      |  6                  |  3                      |  9                  |  3                      |  1                       |  3                       |  2                       |  2                       |  4                       |  3                       |  3                       |  3                       |  3
+
+These Position Data of team for different years, is mapped to number of goals they have scored in different minutes and plotted.
 
 Output:
 --------------
+It shows different number of goals are scored when the position is different. If the team position is top they score early more goals and less late goals which makes them win the more games, if the team is in lower position they are doing very very bad in the game play and try to to score late more goals/ they try to score late in the game.
+
+Output csv for the Analysis 3 can be found at [Analysis_3.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_3.csv)
+
+Output Plot can be found in repository at [Analysis_3 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis3.jpeg)
+
+Plot - Analysis 3
+--------------
+
 AS Shown below, position of team is mapped to the scoring of goals in different minutes.
 
 ![3](https://cloud.githubusercontent.com/assets/8064761/21072202/3f68660e-be88-11e6-8816-b8e2c87f4e13.png)

@@ -272,19 +272,50 @@ Question Asked: How Composed the team are, when they are in top of the league an
 Information:
 --------------
 
+This Analysis uses the [Composure Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_4/Composure), to get the information about the team/club selected and process the data set to get Number of Home matches won, Away matches won, Home goals scored, Away goals conceeded, Total points in a season and Percentage change in the points from previous season. 
+
+
+This Analysis uses the [Composure League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_4/Composure_league_Table), to get the information team position at different years. 
+
 Input:
 --------------
 Data set snippet shown below shows the Shots Hit on Target, Yellow cards conceeded, Red cards conceeded ate Home/Away, Fouls Committed
 
-![1](https://cloud.githubusercontent.com/assets/8064761/21072234/7174a968-be89-11e6-814e-72b45c372678.jpeg)
+
+Div  |  Date      |  HomeTeam  |  AwayTeam       |  FTHG  |  FTAG  |  FTR  |  HTHG  |  HTAG  |  HTR  |  Attendance  |  Referee        |  HS  |  AS  |  HST  |  AST  |  HHW  |  AHW  |  HC  |  AC  |  HF  |  AF  |  HO  |  AO  |  HY  |  AY  |  HR  |  AR
+-----|------------|------------|-----------------|--------|--------|-------|--------|--------|-------|--------------|-----------------|------|------|-------|-------|-------|-------|------|------|------|------|------|------|------|------|------|----
+E0   |  19/08/00  |  Charlton  |  Man City       |  4     |  0     |  H    |  2     |  0     |  H    |  20043       |  Rob Harris     |  17  |  8   |  14   |  4    |  2    |  1    |  6   |  6   |  13  |  12  |  8   |  6   |  1   |  2   |  0   |  0
+E0   |  19/08/00  |  Chelsea   |  West Ham       |  4     |  2     |  H    |  1     |  0     |  H    |  34914       |  Graham Barber  |  17  |  12  |  10   |  5    |  1    |  0    |  7   |  7   |  19  |  14  |  2   |  3   |  1   |  2   |  0   |  0
+E0   |  19/08/00  |  Coventry  |  Middlesbrough  |  1     |  3     |  A    |  1     |  1     |  D    |  20624       |  Barry Knight   |  6   |  16  |  3    |  9    |  0    |  1    |  8   |  4   |  15  |  21  |  1   |  3   |  5   |  3   |  1   |  0
+E0   |  19/08/00  |  Derby     |  Southampton    |  2     |  2     |  D    |  1     |  2     |  A    |  27223       |  Andy D'Urso    |  6   |  13  |  4    |  6    |  0    |  0    |  5   |  8   |  11  |  13  |  0   |  2   |  1   |  1   |  0   |  0
+
+
 
 Below data snippet shows the expansion of the acronym, 
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072235/7357742c-be89-11e6-804a-a84fe694174d.jpeg)
 
 
+The above data frame is used to calculate the total sum over the years as shown 
+
+    |  Year       |  Total Shots  |  Home Shooting Accuracy  |  Away Shooting Accuracy  |  Fouls Commited  |  Being Stupid - Yellow carded  |  Dirty Fouls - Red Carded  |  Number of Set Pieces
+----|-------------|---------------|--------------------------|--------------------------|------------------|--------------------------------|----------------------------|----------------------
+1   |  2006-2007  |  522.0        |  25.170068027210885      |  21.774193548387096      |  436.0           |  64.0                          |  4.0                       |  230.0
+2   |  2007-2008  |  497.0        |  24.161073825503358      |  23.96694214876033       |  432.0           |  65.0                          |  6.0                       |  254.0
+
+
+
+
 Output:
 --------------
+
+It shows how team is composed making fouls, hitting goals with good accuracy when the position is different. If the team position is top their shot accuracy is more, there mental composure is very good making less fouls, but when they are down in the table they try to win matches making more fouls and playing dirty, and not shooting with high accuracy.
+
+Output csv for the Analysis 4 can be found at [Analysis_4.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_4.csv)
+
+Output Plot can be found in repository at [Analysis_4 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis4.jpeg)
+
+
 AS Shown below, When the position of the team is higher, Shot accuracy, is very good, and team is very well composed(not making much fouls),
 
 ![3](https://cloud.githubusercontent.com/assets/8064761/21072238/761ed4f2-be89-11e6-9123-2d33fca1c286.png)

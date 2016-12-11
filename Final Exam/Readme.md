@@ -194,8 +194,9 @@ Created a Map matching the managers performance for a particular season, where e
 
 AS Shown below, the Analysis is done to check the manager does have impact on the Team winning and losing.
 
-![2](https://cloud.githubusercontent.com/assets/8064761/21072166/2bd0e9b4-be87-11e6-8d3e-6c7c81d0b4df.png)
+![download 4](https://cloud.githubusercontent.com/assets/8064761/21077968/a9ebddc8-bf2b-11e6-88ab-16d145e30922.png)
 
+Plot depicts the how the under different managers team performance does changes in scoring at home, at away, and getting hit at home and away.
 
 
 ## Analysis 3

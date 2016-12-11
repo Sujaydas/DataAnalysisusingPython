@@ -1,7 +1,6 @@
 # A Data Analysis of English Premier League
 ![football_pitch](https://cloud.githubusercontent.com/assets/8064761/21078437/bd1d98a8-bf3c-11e6-848b-5f2df785a809.png)
 
-
 ## Table of Contents
 ==============
 * [Introduction](.#introduction)
@@ -51,8 +50,7 @@ E0   |  19/08/00  |  Chelsea   |  West Ham       |  4     |  2     |  H    |  1 
 E0   |  19/08/00  |  Coventry  |  Middlesbrough  |  1     |  3     |  A    |  1     |  1     |  D    |  20624       |  Barry Knight   |  6   |  16  |  3    |  9    |  0    |  1    |  8   |  4   |  15  |  21  |  1   |  3   |  5   |  3   |  1   |  0
 E0   |  19/08/00  |  Derby     |  Southampton    |  2     |  2     |  D    |  1     |  2     |  A    |  27223       |  Andy D'Urso    |  6   |  13  |  4    |  6    |  0    |  0    |  5   |  8   |  11  |  13  |  0   |  2   |  1   |  1   |  0   |  0
 
-This data specifies Charlton and Manchester City has played a match on 19/08/2000 , where the full time score is 4-0 (FTHG = 4) favour of home team(charlton), Charlton has won the match indicated by the FTR = 'H'. Charlton has scored 2 goals in the first half (HTHG = 2).
-Again, the acroynm and explanation about the each column and there meaning can be found at [Match Abbrevations] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Notes.txt)
+This data from the first row, specifies Charlton and Manchester City has played a match on 19/08/2000 , where the full time score is 4-0 (FTHG = 4) favour of home team(charlton), Charlton has won the match indicated by the FTR = 'H'. Charlton has scored 2 goals in the first half (HTHG = 2). Again, the acroynm and explanation about the each column and there meaning can be found at [Match Abbrevations] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Input/Analysis_1/Notes.txt)
 
 
 ## Data Set - 2
@@ -99,7 +97,7 @@ Pos  |  Team               |  Pld  |  W   |  D   |  L   |  GF  |  GA  |  GD  |  
 ## Motivation
 ==============
 
-Motivation behind Data analysis using python because of the ease of process for obtaining raw data and converting it into information useful for decision-making by users. Data is collected and analyzed to answer questions, test hypotheses or disprove theories using python in very limited number of code.
+Motivation behind Data analysis using python because of the ease of process for obtaining raw data and converting it into information useful for decision-making by users. Data can be collected and analyzed to answer questions, test hypotheses or disprove theories, using python in very limited number of code.
 
 Also because of the way the human brain processes information, using charts or graphs to visualize large amounts of complex data is easier than poring over spreadsheets or reports. Data visualization is a quick, easy way to convey concepts in a universal manner – and you can experiment with different scenarios by making slight adjustments.
 
@@ -147,6 +145,8 @@ Plot - Analysis 1
 
 ![download 5](https://cloud.githubusercontent.com/assets/8064761/21078319/ba2a2ab6-bf38-11e6-8846-345d4fcf0f87.png)
 
+Conclusion:
+--------------
 Plot depicts the how the team is scoring at home, at away, and getting hit at home and away.
 
 ## Analysis 2
@@ -188,7 +188,6 @@ How to run the program:
 Output:
 --------------
 
-
 It shows different attributes such as, Number of points, Number of Home Wins, Away Wins, Home Goals Scored for a particular team over the years under particular Manager
 
 Output csv for the Analysis 2 can be found at [Analysis_2.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_2.csv)
@@ -205,6 +204,8 @@ AS Shown below, the Analysis is done to check the manager does have impact on th
 
 ![download 4](https://cloud.githubusercontent.com/assets/8064761/21077968/a9ebddc8-bf2b-11e6-88ab-16d145e30922.png)
 
+Conclusion:
+--------------
 Plot depicts the how the under different managers team performance does changes in scoring at home, at away, and getting hit at home and away.
 
 
@@ -218,7 +219,7 @@ Information:
 --------------
 This Analysis uses the data [Goal Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/Goals), which is the Name of the team played in that season and how many goals they scored in 10 minutes range.  
 
-It also uses Data set [League Table Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/League_Table). Each of the .csv file in the information about the position the each team/club ended up with. It has information about Number of matches each team has won, lost, drew. Goals scored, Goals defended and Total Points at the end of the league.
+It also uses Data set [League Table Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_3/League_Table). Each of the .csv file in the information about the position the each team/club ended up with. It has information about Number of matches each team has won, lost, drew. Goals scored, Goals defended and Total Points at the end of the league. I use tihs data set to get the league position of the team in that season.
 
 This Analysis gives information about team scoring at different minutes of match, and to add complexity how the team is scoring at different position in the league table
 
@@ -266,7 +267,7 @@ How to run the program:
       
 Output:
 --------------
-It shows different number of goals are scored when the position is different. If the team position is top they score early more goals and less late goals which makes them win the more games, if the team is in lower position they are doing very very bad in the game play and try to to score late more goals/ they try to score late in the game.
+It shows different number of goals are scored when the position is different. 
 
 Output csv for the Analysis 3 can be found at [Analysis_3.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_3.csv)
 
@@ -278,6 +279,11 @@ Plot - Analysis 3
 AS Shown below, position of team is mapped to the scoring of goals in different minutes.
 
 ![download 7](https://cloud.githubusercontent.com/assets/8064761/21078347/9ae940b4-bf39-11e6-8062-bf110cf23920.png)
+
+
+Conclusion:
+--------------
+If the team position is top they score early more goals and less late goals which makes them win the more games, if the team is in lower position they are doing very very bad in the game play and try to to score late more goals/ they try to score late in the game.
 
 
 ## Analysis 4
@@ -293,6 +299,8 @@ This Analysis uses the [Composure Data] (https://github.com/Sujaydas/DataAnalysi
 
 
 This Analysis uses the [Composure League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_4/Composure_league_Table), to get the information team position at different years. 
+
+This Analysis give the information about how the team peform under pressure when they are lower the table and how they perform when they are top of the table. 
 
 Input:
 --------------
@@ -342,6 +350,9 @@ AS Shown below, When the position of the team is higher, Shot accuracy, is very 
 
 ![3](https://cloud.githubusercontent.com/assets/8064761/21072238/761ed4f2-be89-11e6-9123-2d33fca1c286.png)
 
+Conclusion:
+--------------
+If the team position is top their shot accuracy is more, there mental composure is very good making less fouls, but when they are down in the table they try to win matches making more fouls and playing dirty, and not shooting with high accuracy.
 
 
 ## Analysis 5
@@ -379,7 +390,7 @@ I create intermediate frame as
 4  |  Man United  |  Tottenham  |  W W W W W W L L W W    |  L D D L D L D D D W    |  8.0        |  2.0          |  0.0         |  1.0        |  3.0          |  6.0
 
 
-Finally using the Prediction alogorithm below stats is obtained
+Finally using the Prediction alogorithm below stats is obtained, here L refers to Loss the mathc,  W referes to won the last match, D refers to Drew the match,  if the form is W W W L L D,  in the last six matches they have one drew last match played and lost the previous to that matches, and won previous to that 3 matches.
 
 
    |  Team 2     |  Home Form              |  Away Form              |  Home Wins  |  Home Losses  |  Home draws  |  Away Wins  |  Away Losses  |  Away draws  |  Home Prediction     |  Away Prediction
@@ -410,3 +421,8 @@ Output Plot can be found in repository at [Analysis_5 Plot] (https://github.com/
 AS Shown below, it shows graph for the Form aganist the different Top teams and the prediction of winning aganist the team at Home, 
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072272/aa25c6ec-be8a-11e6-9567-19e86139094b.png)
+
+Conclusion:
+--------------
+I was able to predict the previous matches about the Chelsea team aganist the tottenham and West Ham, where the winning percentage for home this season for chelsea is average 70%. I was able to predict Manchester United match aganist Everton( 1- 1 home winning percentage was 53% , close one) and Tottenham (2-1, home winning percentage 63%).
+

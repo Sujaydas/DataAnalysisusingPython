@@ -95,7 +95,9 @@ Pos  |  Team               |  Pld  |  W   |  D   |  L   |  GF  |  GA  |  GD  |  
 ## Motivation
 ==============
 
-Because of the way the human brain processes information, using charts or graphs to visualize large amounts of complex data is easier than poring over spreadsheets or reports. Data visualization is a quick, easy way to convey concepts in a universal manner – and you can experiment with different scenarios by making slight adjustments.
+Motivation behind Data analysis using python because of the ease of process for obtaining raw data and converting it into information useful for decision-making by users. Data is collected and analyzed to answer questions, test hypotheses or disprove theories using python in very limited number of code.
+
+Also because of the way the human brain processes information, using charts or graphs to visualize large amounts of complex data is easier than poring over spreadsheets or reports. Data visualization is a quick, easy way to convey concepts in a universal manner – and you can experiment with different scenarios by making slight adjustments.
 
 ## Analysis 1
 ==============
@@ -105,48 +107,35 @@ Question Asked: How is the Team performing over the last 10 years, are they doin
 
 Information:
 --------------
+This Analysis uses the [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data), to get the information about the team/club selected and process the data set to get Number of Home matches won, Away matches won, Home goals scored, Away goals conceeded, Total points in a season and Percentage change in the points from previous season. 
 
 Input:
 --------------
 
-<<<<<<< HEAD
-Data set snippet shown below shows the Football league data over the last 10 years, where each season csv content is shown below,
- 
-Acronyms details are as:
-Date = Match Date (dd/mm/yy)
-HomeTeam = Home Team
-AwayTeam = Away Teamm Goals
-FTAG = Full Time Away Team Goals
-FTHG = Full Time Home Tea
-FTR = Full Time Result (H=Home Win, D=Draw, A=Away Win)
-HTHG = Half Time Home Team Goals
-HTAG = Half Time Away Team Goals
-HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win)
+Pre Processing
+--------------
+Data collected from the open source has some errors in Date Column in terms of Date format , some entries have 26/08/00  format, some entries have   5/9/2000  format. Process entire data set and reformatted all date columns to 26/08/2000 format.
+
+Div  |  Date      |  HomeTeam     |  AwayTeam    |  FTHG  |  FTAG  |  FTR  |  HTHG  |  HTAG  |  HTR  |  Attendance  |  Referee           |  HS  |  AS  |  HST  |  AST  |  HHW  |  AHW
+-----|------------|---------------|--------------|--------|--------|-------|--------|--------|-------|--------------|--------------------|------|------|-------|-------|-------|-----
+E0   |  26/08/00  |  West Ham     |  Man United  |  2     |  2     |  D    |  0     |  1     |  A    |  25998       |  Dermot Gallagher  |  17  |  8   |  8    |  5    |  0    |  2
+E0   |  27/08/00  |  Aston Villa  |  Chelsea     |  1     |  1     |  D    |  1     |  1     |  D    |  27056       |  Paul Durkin       |  12  |  11  |  9    |  7    |  0    |  0
+E0   |  5/9/2000  |  Leeds        |  Man City    |  1     |  2     |  A    |  0     |  2     |  A    |  40055       |  Graham Poll       |  6   |  8   |  1    |  3    |  1    |  1
+E0   |  5/9/2000  |  Man United   |  Bradford    |  6     |  0     |  H    |  2     |  0     |  H    |  67447       |  Ian Harris        |  21  |  6   |  12   |  4    |  1    |  1
 
 
+How to run the program:
+--------------
 
-Div	Date	HomeTeam	AwayTeam	FTHG	FTAG	FTR	HTHG	HTAG	HTR	Referee	HS	AS	HST	AST	HF	AF
-E0	19/08/06	Arsenal	Aston Villa	1	1	D	0	0	D	G Poll	19	5	11	3	10	19
-E0	19/08/06	Bolton	Tottenham	2	0	H	2	0	H	P Dowd	8	9	6	6	19	22
-E0	19/08/06	Everton	Watford	2	1	H	1	0	H	P Walton	6	12	2	8	12	13
-E0	19/08/06	Newcastle	Wigan	2	1	H	1	0	H	M Atkinson	9	14	8	9	17	20
-E0	19/08/06	Portsmouth	Blackburn	3	0	H	1	0	H	A Wiley	21	9	16	7	20	17
-E0	19/08/06	Reading	Middlesbrough	3	2	H	2	2	D	M Halsey	14	7	9	5	8	15
-=======
-Data set snippet shown below shows the Football league data over the last 10 years, where each season csv content is shown below, 
-
-![1](https://cloud.githubusercontent.com/assets/8064761/21072106/683d3382-be85-11e6-8718-792bc8ad7535.jpeg)
-
-Acronyms details are as:
-
-![2](https://cloud.githubusercontent.com/assets/8064761/21072107/7ac1d9c2-be85-11e6-96d3-b5d3a0dc4a4d.jpeg)
+  * Provide team name to be analysed in the python arguments as
+      python Analysis_1.py "Man United"
 
 Output:
 --------------
 It shows different attributes such as, Percentage change in the Number of points, Number of Home Wins, Away Wins, Home Goals Scored for a particular team over the years.
 
-![analysis1](https://cloud.githubusercontent.com/assets/8064761/21072053/c21777de-be83-11e6-96a1-19e8fb311bb7.jpeg)
-
+Output csv for the Analysis 1 can be found at [Analysis_1.csv] (#das)
+Output Plot can be found in repository at [Analysis_1 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis1.jpeg)
 
 
 ## Analysis 2

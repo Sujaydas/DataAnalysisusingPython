@@ -60,7 +60,8 @@ for raw_file_ in glob("C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Input\Anal
 
     Total_Points = ((Home_Win_Count + Away_Wins_Count) * 3) + Home_draw_Count + Away_draw_Count
     Percentage_change_points = ((previous_Total_points - Total_Points)/previous_Total_points) * 100
-    
+    previous_Total_points = Total_Points
+	
     Attributes_single_year[0] = season_year
     Attributes_single_year[1] = Home_Win_Count
     Attributes_single_year[2] = Away_Wins_Count
@@ -108,6 +109,11 @@ plt.ylim([-50,100])
 plt.tick_params(axis='both',which='major', width=3,length=8,color='r')
 
 plt.savefig(r'C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis1.jpeg')
+Attributes_all_years_file = "C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis_1.csv"
+Attributes_all_years.to_csv(Attributes_all_years_file, sep=',', encoding='utf-8')
+
+
+
 #plt.tick_params(which='major', length=7)
 #plt.tick_params(which='minor', length=10, color='r')
 

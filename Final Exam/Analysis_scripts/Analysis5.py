@@ -10,7 +10,22 @@ from matplotlib import pyplot as plt
 from datetime import datetime,date,timedelta
 #%matplotlib inline
 
-Team_Name5 = 'Man United'
+import argparse
+
+def Parse_CommandLine(parser):
+
+    parser.add_argument("Team_Name", help="Team to be Analysed ")
+
+    args = parser.parse_args()
+    print("The Team to be analyzed is "+ args.Team_Name)
+    return args
+
+parser = argparse.ArgumentParser()
+parse_result = Parse_CommandLine(parser)
+
+Team_Name5 = parse_result.Team_Name
+
+#Team_Name5 = 'Man United'
 Prediction_Teams = ['Man United'  ,'Man City',  'Chelsea', 'Arsenal', 'Tottenham', 'Everton', 'West Ham', 'Liverpool']
 
 cnt = 0

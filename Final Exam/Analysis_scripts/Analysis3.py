@@ -10,10 +10,26 @@ from matplotlib import pyplot as plt
 from datetime import datetime,date,timedelta
 #%matplotlib inline
 
+import argparse
+
+def Parse_CommandLine(parser):
+
+    parser.add_argument("Team_Name", help="Team to be Analysed ")
+
+    args = parser.parse_args()
+    print("The Team to be analyzed is "+ args.Team_Name)
+    return args
+
+parser = argparse.ArgumentParser()
+parse_result = Parse_CommandLine(parser)
+
+Team_Name_Goals = parse_result.Team_Name
+
+
 cnt2 = 0
 goal_all_list = []
 
-Team_Name_Goals = "Chelsea"
+#	Team_Name_Goals = "Chelsea"
 
 for Goals_file in glob(r"C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Input\Analysis_3\Goals\*.csv"):
     Goals_df = pd.read_csv(Goals_file)
@@ -89,7 +105,7 @@ Analysis3_plot_df['values_to_plot'] = Analysis3_plot_df.values_to_plot.apply(lam
 Postion_list = list(Analysi3_df.Pos)
 Postion_list
 
-label = 'League Table Finish ->  '
+label = 'Finish ->  '
 
 Postion_text = [label + str(num) for num in Postion_list]
 #Postion_text
@@ -153,10 +169,10 @@ plt.setp(labels, rotation=90, fontsize=20, color='#410200')
 labels3 = ax3.get_yticklabels()
 plt.setp(labels3, rotation=0, fontsize=20, color='#410200')
 
-plt.xlabel('Over the Different seasons ', fontsize=30, color='#e50000')
+plt.xlabel('Over the Different seasons ', fontsize=30, color='#033500')
 plt.ylabel('Number of goals socred in specific minutes', fontsize=30, color='#00022e')
 #plt.ylim([0,90])
-plt.tick_params(axis='both',which='major', width=6,length=15,color='r')
+plt.tick_params(axis='both',which='major', width=6,length=15,color='g')
 
 
 

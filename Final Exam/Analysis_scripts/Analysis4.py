@@ -10,8 +10,24 @@ from matplotlib import pyplot as plt
 from datetime import datetime,date,timedelta
 #%matplotlib inline
 
+import argparse
 
-Team_Name4 = "Chelsea"
+def Parse_CommandLine(parser):
+
+    parser.add_argument("Team_Name", help="Team to be Analysed ")
+
+    args = parser.parse_args()
+    print("The Team to be analyzed is "+ args.Team_Name)
+    return args
+
+parser = argparse.ArgumentParser()
+parse_result = Parse_CommandLine(parser)
+
+Team_Name4 = parse_result.Team_Name
+
+
+
+#Team_Name4 = "Chelsea"
 cnt = 0 
 
 Composure_columns = ['Year','Total Shots', 'Home Shooting Accuracy','Away Shooting Accuracy','Fouls Commited','Being Stupid - Yellow carded','Dirty Fouls - Red Carded','Number of Set Pieces']

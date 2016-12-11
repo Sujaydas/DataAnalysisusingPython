@@ -9,8 +9,23 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 from datetime import datetime,date,timedelta
 #%matplotlib inline
+import argparse
 
-Team_Name1 = "Chelsea"
+def Parse_CommandLine(parser):
+
+    parser.add_argument("Team_Name", help="Team to be Analysed ")
+
+    args = parser.parse_args()
+    print("The Team to be analyzed is "+ args.Team_Name)
+    return args
+
+parser = argparse.ArgumentParser()
+parse_result = Parse_CommandLine(parser)
+
+Team_Name1 = parse_result.Team_Name
+
+
+#Team_Name1 = "Chelsea"
 
 _manger_file_ = r"C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Input\Analysis_2\Manager\EPL_Managers.csv"
 _Raw_file_ = pd.read_csv(_manger_file_)

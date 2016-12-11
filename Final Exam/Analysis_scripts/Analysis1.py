@@ -11,8 +11,24 @@ from datetime import datetime,date,timedelta
 #%matplotlib inline
 #from IPython import get_ipython
 #get_ipython().run_line_magic('matplotlib', 'inline')
+import argparse
 
-Team_Name = "Man United"
+def Parse_CommandLine(parser):
+
+    parser.add_argument("Team_Name", help="Team to be Analysed ")
+
+    args = parser.parse_args()
+    print("The Team to be analyzed is "+ args.Team_Name)
+    return args
+
+parser = argparse.ArgumentParser()
+parse_result = Parse_CommandLine(parser)
+
+Team_Name = parse_result.Team_Name
+#print(url)
+
+#Team_Name = url
+#Team_Name = "Man United"
 
 Attribute_columns = ['Season Year', 'Home Wins','Away Wins','Home Losses','Away Losses','Home Goals Conceeded','Away Goals Conceeded','Home Goals scored','Away Goals Scored','Total Points','Percentage Change in Points']
 Attributes_all_years = pd.DataFrame(np.nan,index=[0], columns=Attribute_columns)
@@ -102,7 +118,7 @@ sns.set_style('whitegrid')
 sns.barplot(x='Season Year',y='Season Statistics',hue= 'Attributes',data=f_df,palette="YlOrBr")
 ax.set_title('Team Statistics over the years',fontsize=40,color='#730039')
 labels = ax.get_xticklabels()
-plt.setp(labels, rotation=0, fontsize=20, color='#a90308')
+plt.setp(labels, rotation=0, fontsize=20, color='#0165fc')
 plt.xlabel('Different Seasons Year', fontsize=20, color='#00022e')
 plt.ylabel('Value for Different Attributes', fontsize=20, color='#00022e')
 plt.ylim([-50,100])

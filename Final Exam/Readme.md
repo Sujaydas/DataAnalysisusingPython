@@ -174,7 +174,12 @@ Another Intermediate Output will have Manager data mapped to League matches data
 
 ![analysis_2_3](https://cloud.githubusercontent.com/assets/8064761/21077943/121330ec-bf2a-11e6-9ad5-200d81d997a0.png)
 
+How to run the program:
+--------------
 
+  * Provide team name to be analysed in the python arguments as
+  
+      python Analysis_2.py "Chelsea"
 
 Output:
 --------------
@@ -247,6 +252,14 @@ After merging and processing below frame is obtained
 
 These Position Data of team for different years, is mapped to number of goals they have scored in different minutes and plotted.
 
+How to run the program:
+--------------
+
+  * Provide team name to be analysed in the python arguments as
+  
+      python Analysis_3.py "Chelsea"
+      
+      
 Output:
 --------------
 It shows different number of goals are scored when the position is different. If the team position is top they score early more goals and less late goals which makes them win the more games, if the team is in lower position they are doing very very bad in the game play and try to to score late more goals/ they try to score late in the game.
@@ -304,7 +317,12 @@ The above data frame is used to calculate the total sum over the years as shown
 2   |  2007-2008  |  497.0        |  24.161073825503358      |  23.96694214876033       |  432.0           |  65.0                          |  6.0                       |  254.0
 
 
+How to run the program:
+--------------
 
+  * Provide team name to be analysed in the python arguments as
+  
+      python Analysis_4.py "Chelsea"
 
 Output:
 --------------
@@ -367,6 +385,13 @@ Finally using the Prediction alogorithm below stats is obtained
 3  |  Arsenal    |  L W D W W W W W        |  W D W L W L D D        |  6.0        |  1.0          |  1.0         |  3.0        |  2.0          |  3.0         |  60.023342807583674  |  47.523342807583674
 
 
+How to run the program:
+--------------
+
+  * Provide team name to be analysed in the python arguments as
+  
+      python Analysis_5.py "Chelsea"
+      
 Output:
 --------------
 

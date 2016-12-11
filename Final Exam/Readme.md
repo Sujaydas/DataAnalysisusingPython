@@ -18,13 +18,14 @@ Question Asked: How is the Team performing over the last 10 years
 Input:
 --------------
 
-Data set snippet shown below shows the Football league data over the last 10 years, where each season csv content is shown below, 
+Data set snippet shown below shows the Football league data over the last 10 years, where each season csv content is shown below,
+ 
 Acronyms details are as:
 Date = Match Date (dd/mm/yy)
 HomeTeam = Home Team
-AwayTeam = Away Team
-FTHG = Full Time Home Team Goals
+AwayTeam = Away Teamm Goals
 FTAG = Full Time Away Team Goals
+FTHG = Full Time Home Tea
 FTR = Full Time Result (H=Home Win, D=Draw, A=Away Win)
 HTHG = Half Time Home Team Goals
 HTAG = Half Time Away Team Goals

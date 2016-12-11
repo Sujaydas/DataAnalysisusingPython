@@ -141,7 +141,7 @@ Output Plot can be found in repository at [Analysis_1 Plot] (https://github.com/
 Plot - Analysis 1
 --------------
 
-![analysis1](https://cloud.githubusercontent.com/assets/8064761/21077853/42aefe32-bf27-11e6-822f-4059ba01089e.jpeg)
+![analysis_1](https://cloud.githubusercontent.com/assets/8064761/21077862/9b5a04aa-bf27-11e6-92e6-1d33e6931d71.png)
 
 Plot depicts the how the team is scoring at home, at away, and getting hit at home and away.
 

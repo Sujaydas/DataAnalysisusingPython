@@ -331,14 +331,53 @@ Question Asked: Can we make the Prediction of the upcoming Matches, based on the
 Information:
 --------------
 
+This Analysis uses the data [prediction Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_5/Prediction), which is the Data with each matches in League which is same as  [League Data] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_1/Data)
+
+This Analysis gives the prediction about the particular team can be able to win aganist the other top teams, based on the alorithm designed using previous data and current Form.
+
+prediction algorithm
+      *  previous years  at this point average wins and losses - takes 30% of overall prediction
+      *  Previous meetings with team    - 30% of overall prediction
+      *  Current form                  - 40% of overall prediction
+
 Input:
 --------------
 Data set snippet shown below shows detailed data of 2006-2007 , with full time score, half time score, Result of match
 
 ![1](https://cloud.githubusercontent.com/assets/8064761/21072271/a8dfa73a-be8a-11e6-9657-767f5a22705a.jpeg)
 
+Using this data [prediction Data Set] (https://github.com/Sujaydas/DataAnalysisusingPython/tree/master/Final%20Exam/Input/Analysis_5/Prediction)
+I create intermediate frame as
+
+   |  Team 1      |  Team 2     |  Home Form              |  Away Form              |  Home Wins  |  Home Losses  |  Home draws  |  Away Wins  |  Away Losses  |  Away draws
+---|--------------|-------------|-------------------------|-------------------------|-------------|---------------|--------------|-------------|---------------|------------
+1  |  Man United  |  Man City   |  W L W W W L L L W D L  |  L W L L D W L W W L    |  5.0        |  5.0          |  1.0         |  4.0        |  5.0          |  1.0
+2  |  Man United  |  Chelsea    |  D W W L W W L D D D    |  D W D W W D L W W D W  |  4.0        |  2.0          |  4.0         |  6.0        |  1.0          |  4.0
+3  |  Man United  |  Arsenal    |  L W D W W W W W        |  W D W L W L D D        |  6.0        |  1.0          |  1.0         |  3.0        |  2.0          |  3.0
+4  |  Man United  |  Tottenham  |  W W W W W W L L W W    |  L D D L D L D D D W    |  8.0        |  2.0          |  0.0         |  1.0        |  3.0          |  6.0
+
+
+Finally using the Prediction alogorithm below stats is obtained
+
+
+   |  Team 2     |  Home Form              |  Away Form              |  Home Wins  |  Home Losses  |  Home draws  |  Away Wins  |  Away Losses  |  Away draws  |  Home Prediction     |  Away Prediction
+---|-------------|-------------------------|-------------------------|-------------|---------------|--------------|-------------|---------------|--------------|----------------------|--------------------
+1  |  Man City   |  W L W W W L L L W D L  |  L W L L D W L W W L    |  5.0        |  5.0          |  1.0         |  4.0        |  5.0          |  1.0         |  40.93243371667458   |  38.023342807583674
+2  |  Chelsea    |  D W W L W W L D D D    |  D W D W W D L W W D W  |  4.0        |  2.0          |  4.0         |  6.0        |  1.0          |  4.0         |  50.023342807583674  |  57.29607008031095
+3  |  Arsenal    |  L W D W W W W W        |  W D W L W L D D        |  6.0        |  1.0          |  1.0         |  3.0        |  2.0          |  3.0         |  60.023342807583674  |  47.523342807583674
+
+
 Output:
 --------------
+
+It shows based on the previous meetings with other teams and current form, and current league position and points, we can predict the winning percentage.
+
+Output csv for the Analysis 5 can be found at [Analysis_5.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_5.csv)
+
+Output Plot can be found in repository at [Analysis_5 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis5.jpeg)
+
+
+
 AS Shown below, it shows graph for the Form aganist the different Top teams and the prediction of winning aganist the team at Home, 
 
 ![2](https://cloud.githubusercontent.com/assets/8064761/21072272/aa25c6ec-be8a-11e6-9567-19e86139094b.png)

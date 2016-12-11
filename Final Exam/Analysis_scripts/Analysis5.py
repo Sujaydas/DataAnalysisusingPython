@@ -316,6 +316,9 @@ Average_predict_all_years = predict_all_years[['Team 2','Home Form','Away Form',
 Average_predict_all_years['Home Prediction'] = Average_predict_all_years['Home Form'].apply(old_form,1)
 Average_predict_all_years['Away Prediction'] = Average_predict_all_years['Away Form'].apply(old_form,1)
 #Average_predict_all_years
+Average_predict_all_years_file = r"C:\Data Analysis\Sujay_DataAnalysis\Final_Exam\Output\Analysis_5.csv"
+Average_predict_all_years.to_csv(Average_predict_all_years_file, sep=',', encoding='utf-8') 
+
 
 sns.set(style="whitegrid")
 

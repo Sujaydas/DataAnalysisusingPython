@@ -138,6 +138,11 @@ It shows different attributes such as, Percentage change in the Number of points
 Output csv for the Analysis 1 can be found at [Analysis_1.csv] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis_1.csv)
 Output Plot can be found in repository at [Analysis_1 Plot] (https://github.com/Sujaydas/DataAnalysisusingPython/blob/master/Final%20Exam/Output/Analysis1.jpeg)
 
+Plot - Analysis 1
+--------------
+
+![analysis1](https://cloud.githubusercontent.com/assets/8064761/21077853/42aefe32-bf27-11e6-822f-4059ba01089e.jpeg)
+
 Plot depicts the how the team is scoring at home, at away, and getting hit at home and away.
 
 ## Analysis 2

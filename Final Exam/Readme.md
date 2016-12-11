@@ -1,4 +1,4 @@
-# A Brief Analysis of English Premier League Data
+# A Data Analysis of English Premier League
 ![football_pitch](https://cloud.githubusercontent.com/assets/8064761/21078437/bd1d98a8-bf3c-11e6-848b-5f2df785a809.png)
 
 
